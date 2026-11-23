@@ -24,12 +24,11 @@ public class WardController {
         services.add(new Dialysis("Dialysis"));
         services.add(new Massage("Massage"));
 
-        for (Service s : services) {
-            bays.add(new Bays(s.home(), services));
-            for (String name : bayNames) {
-                bays.add(new Bays(name, services));
-            }
+
+        for (String name : bayNames) {
+            bays.add(new Bays(name, services));
         }
+
     }
 
     /** Called once per hour from main. The same for every option. */

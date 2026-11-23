@@ -47,9 +47,6 @@ public abstract class Service {
     public void tick() {
         if (hoursLeft > 0) {
             hoursLeft--;
-            if (hoursLeft == 0) {                       // just finished
-                location = home();
-            }
         }
     }
 
@@ -73,8 +70,6 @@ public abstract class Service {
     public String getLocation() {
         return location;
     }
-
-
 
 
 
